@@ -31,3 +31,51 @@ header {
     margin-right: 50px;
     white-space: nowrap;
 }
+
+/* Дизайн кнопки */
+.cont_for_btn {
+    display: flex;
+    justify-content: center;
+  }
+
+.form {
+  /*   width: 50%; */
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+.btn, .input-file span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: rgb(246	195	68);
+    background: rgb(34, 37, 41);
+    border-radius: 7px;
+    padding: 5px 17px;
+    transition: background-color 0.2s;
+}
+
+.input-file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+   
+/* Hover/active */
+.btn:hover, .input-file:hover span {
+    background-color: #000000c4;
+}
+.btn:active, .input-file:active span {
+    background-color: #000000c4;
+}
+   
+/* Disabled */
+.input-file input[type=file]:disabled + span {
+    background-color: #eee;
+}
+/* Конец дизайна кнопки */

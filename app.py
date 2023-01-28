@@ -91,6 +91,8 @@ def prediction():
 
         image = Image.open(io.BytesIO(req.content))
         image.save('img/after/' + f.filename.split('.')[0] + '.png')
+        Image.open(file_path).save('static/images/before.jpg')
+        image.save('static/images/after.png')
         
         # –––––––––––––––––––– END PREDICT––––––––––––––––––––
 
