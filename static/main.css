@@ -1,8 +1,8 @@
 body {
     margin: 0px;
     font-family: 'Space Grotesk', sans-serif;
-    /* background: linear-gradient(to bottom, #cc7722, rgb(51, 59, 70));
-    height: 100%; */
+    background: linear-gradient(to bottom right, #cc7722, rgb(71, 101, 141) 80%, rgb(51, 59, 70));
+    height: 100vh;
 }
 
 *, *::after, *::before {
@@ -38,7 +38,7 @@ header {
 .cont_for_btn {
     display: flex;
     justify-content: center;
-  }
+}
 
 .form {
   /*   width: 50%; */
@@ -70,10 +70,10 @@ header {
    
 /* Hover/active */
 .btn:hover, .input-file:hover span {
-    background-color: #000000c4;
+    background-color: #546077c4;
 }
 .btn:active, .input-file:active span {
-    background-color: #000000c4;
+    background-color: #546077c4;
 }
    
 /* Disabled */
@@ -83,9 +83,9 @@ header {
 /* Конец дизайна кнопки */
 
 /* Дизайн блока с фото */
-  .photo-block {
+.photo-block {
     max-width: 800px;
-    max-height: 600px;
+    max-height: 400px;
     width: 60%;
     height: 60%;
     display: flex;
@@ -93,9 +93,9 @@ header {
     justify-content: center;
     margin: 20px auto;
     /* height: 100vh; */
-  }
+}
 
-  .photo {
+.photo {
     width: 40%;
     height: auto;
     padding: 5px;
@@ -103,5 +103,6 @@ header {
     border: 5px solid rgb(34, 37, 41);
     border-radius: 10px;
     margin: 0 30px;
-  }
+    box-shadow: 8px 8px 5px #444;
+}
 /* Конец дизайна блока с фото */
