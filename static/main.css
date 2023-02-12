@@ -1,6 +1,8 @@
 body {
     margin: 0px;
     font-family: 'Space Grotesk', sans-serif;
+    /* background: linear-gradient(to bottom, #cc7722, rgb(51, 59, 70));
+    height: 100%; */
 }
 
 *, *::after, *::before {
@@ -79,3 +81,27 @@ header {
     background-color: #eee;
 }
 /* Конец дизайна кнопки */
+
+/* Дизайн блока с фото */
+  .photo-block {
+    max-width: 800px;
+    max-height: 600px;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    /* height: 100vh; */
+  }
+
+  .photo {
+    width: 40%;
+    height: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 5px solid rgb(34, 37, 41);
+    border-radius: 10px;
+    margin: 0 30px;
+  }
+/* Конец дизайна блока с фото */

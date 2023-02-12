@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-    <title>{% block title %}{% endblock %}</title>
+    <title></title>
 </head>
 <body>
     <header>
@@ -19,7 +19,8 @@
             <a href="/pricing">Pricing</a>
         </div>
     </header>
-    
+    <div style="width: 25%; height: 100px; margin: 20px auto;"></div>
+    <title>{% block title %}{% endblock %}</title>
     {% block body %}{% endblock %}
 
 </body>
