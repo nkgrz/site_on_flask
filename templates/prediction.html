@@ -3,31 +3,38 @@
 {% block title %}Обработка фото{% endblock %}
 
 {% block body %}
-<div class="container_main_page">
+<div class="container">
+
     <h1 style="text-align: center;">Обработка</h1>
+
+    <div class="photo-block">
+        <img class="photo" src="static/images/before.jpg" alt="First photo">
+        <img class="photo" src="static/images/after.png" alt="Second photo">
+    </div>
+
+    <!-- Кнопки: загрузка фото, подтвердить, скачать -->
+    <div class="cont_for_btn">
+        <form method="POST" enctype="multipart/form-data" class="form">
+            <div class="fileuploader">
+                <label class="input-file">
+                    <input type="file" name="file" accept=".jpg, .png" class="btn">	
+                    <span>Select file</span>
+                </label>
+                <input type="submit" class="btn" value="Submit"/>
+                <a href="static/images/after.png" download="" class="downl btn">
+                    Download
+                </a>
+            </div>
+        </form>
+        
+    </div>
+    <!-- Конец кнопкок -->
+
 </div>
 
-<div class="photo-block">
-    <img class="photo" src="static/images/before.jpg" alt="First photo">
-    <img class="photo" src="static/images/after.png" alt="Second photo">
-</div>
 
-<!-- Кнопка загрузки фото -->
-<div class="cont_for_btn">
-    <form method="POST" enctype="multipart/form-data" class="form">
-        <div class="fileuploader">
-            <label class="input-file">
-                <input type="file" name="file" accept=".jpg, .png" class="btn">	
-                <span>Select file</span>
-            </label>
-            <button type="submit" class="btn">Submit</button>
-        </div>
-    </form>
-    <a href="static/images/after.png" download="" class="downl">
-        <button class="btn">Download</button>
-    </a>
-</div>
-<!-- Конец кнопки -->
+
+
 
 <!-- Функционал кнопки -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>

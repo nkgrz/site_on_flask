@@ -12,16 +12,24 @@
     <title></title>
 </head>
 <body>
-    <header>
-        <div class="menu_wrapper">
-            <a href="/home">Home</a>
-            <a href="/prediction">Prediction</a>
-            <a href="/pricing">Pricing</a>
-        </div>
-    </header>
-    <div style="width: 25%; height: 100px; margin: 20px auto;"></div>
-    <title>{% block title %}{% endblock %}</title>
-    {% block body %}{% endblock %}
+    <div class="main-container">
+        <header>
+            <div class="menu_wrapper">
+                <div class="menu_wrapper_el">
+                    <a href="/home">Home</a>
+                </div>
+                <div class="menu_wrapper_el">
+                    <a href="/prediction">Prediction</a>
+                </div>
+                <div class="menu_wrapper_el">
+                    <a href="/pricing">Pricing</a>
+                </div>
+            </div>
+        </header>
+        <title>{% block title %}{% endblock %}</title>
+
+        {% block body %}{% endblock %}
+    </div>
 
 </body>
 </html>
