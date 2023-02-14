@@ -24,7 +24,6 @@ header {
     height: 45px;
     background-color: rgb(34, 37, 41);
     display: flex;
-    /* расположение менюшек сверху по центру */
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -33,20 +32,16 @@ header {
 }
 
 
-.menu_wrapper {
-    display: flex;
-    
-}
-
-
 .menu_wrapper a{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
     color: rgb(246	195	68);
     text-decoration: none;
-    /* margin-right: 50px; */
     white-space: nowrap;
+    text-align: center;
+    display: inline-block;
+    padding: 0 30px;
 }
 
 
@@ -124,9 +119,3 @@ header {
     box-shadow: 8px 8px 5px #444;
 }
 /* Конец дизайна блока с фото */
-
-.menu_wrapper_el {
-    text-align: center;
-    display: inline-block;
-    padding: 0 30px;
-}
