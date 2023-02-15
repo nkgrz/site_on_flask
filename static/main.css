@@ -123,3 +123,40 @@ header {
     box-shadow: 8px 8px 5px #444;
 }
 /* Конец дизайна блока с фото */
+
+
+/* Страницы авторизации и регистрации */
+.container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+#login-form, #register-form {
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+    padding: 20px;
+    border: 2px solid rgb(241, 238, 238);
+    border-radius: 10px;
+    margin: 20px;
+}
+  
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+  
+button {
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Конец блока страниц авторизации и регистрации */
